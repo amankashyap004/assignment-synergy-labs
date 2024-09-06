@@ -12,13 +12,14 @@ function App() {
       element: <Home />,
     },
     {
-      path: "/user",
+      path: "/user/:id",
       element: <UserDetails />,
     },
   ]);
   return (
-    <main className="font-poppins">
+    <main className="flex flex-col justify-center items-center gap-y-8 font-poppins">
       <Header />
+      <div className="pt-20"></div>
       <RouterProvider router={router} />
       <Footer />
     </main>
