@@ -40,7 +40,7 @@ const UserList: React.FC<UserListProps> = ({ users, onEdit, onDelete }) => {
               <td className="px-2 lg:px-6 py-3 lg:py-4 border-b">
                 {user.phone}
               </td>
-              <td className="px-2 lg:px-6 py-3 lg:py-4 border-b flex space-x-4">
+              <td className="px-2 lg:px-6 py-6 lg:py-4 border-b flex justify-center items-center h-full space-x-2 lg:space-x-4">
                 <button
                   onClick={() => onEdit(user)}
                   className="bg-blue-500 text-white px-4 py-1 rounded hover:bg-blue-600"
